@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'OnduladaByallenn-Regular';
+    src: url('../Fonts/OnduladaByallenn-Regular.ttf') format('opentype');
+}
+
+body {
+    margin: 0px;
+    font-family: "Source Code Pro", monospace;
+    background-image: url(../img/fondo-lila-2.jpg);
+    background-size: contain;
+    cursor: url(../img/icono-gato-50.png), auto;
+
+    .paginaheader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 5px black;
+        background: linear-gradient(0deg,
+                rgba(255, 183, 255, 0.5),
+                rgba(222, 183, 255, 0.5)), url(../img/fondo\ gatos.jpg);
+        background-size: 30vh;
+    }
+}
+
+.paginaheader h1 {
+    font-family: "Tiny5", sans-serif;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-family: 'OnduladaByallenn-Regular', sans-serif;
+}
+
+.lista a {
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(94, 15, 87);
+    transition: all 0.4s;
+}
+
+.lista a :hover {
+    transform: rotate(15deg) scale(1);
+    background-color: rgba(214, 81, 192, 0.4);
+}
+
+main {
+    padding: 0 40px;
+}
+
+main h1 {
+    font-family: "Tiny5", sans-serif;
+}
+
+.gatoimg img,
+.gatovid iframe {
+    width: 260px;
+    height: 260px;
+    min-width: 260px;
+    margin-right: 20px;
+    float: left;
+}
+
+.paginaparrafo {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.footer-texto{
+    display: flex;
+    flex-direction: center;
+    flex-direction: column;
+    background-color: rgba(94, 15, 87, 0.6);
+    padding-bottom: 20px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.iconos-redes {
+    font-size: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: inherit;
+}
+.menu a :hover{
+    font-weight: bold;
+}
+
+footer p {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+}
